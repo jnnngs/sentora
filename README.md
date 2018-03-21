@@ -20,13 +20,17 @@ bash <(curl -L -Ss http://sentora.org/install)
 
 #fix session problem (located in CRON)
 
+
 [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/sentora/sessions ] && /usr/lib/php5/sessionclean /var/sentora/sessions $(/usr/lib/php5/maxlifetime)
 
 #create backup script
+
 git clone https://github.com/neggs/sentora/raw/master/backup.sh
 
 #SSH Security Banner
+
 https://rbgeek.wordpress.com/tag/ssh-warning-banner/
 
 #install webmin
+
 https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-16-04
